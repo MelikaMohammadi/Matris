@@ -27,16 +27,13 @@ public class Main {
         String m = scanner.next();
         if (m.equalsIgnoreCase("c")){
             Matrix.Column column1 =new Column();
-           printMatrix( column1.sort(array,scanner.nextInt(),row));
+           printMatrix( column1.sort(array,scanner.nextInt(),column));
 
 
         }
         else{
             Row row1 =new Row();
-            printMatrix(row1.sort(array,scanner.nextInt()));
-
-
-
+            printMatrix(row1.sort(array,scanner.nextInt(),row));
 
         }
     }}
